@@ -1,16 +1,89 @@
-# React + Vite
+# 💼 JobBoard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern job board web app built with React. Browse jobs, create an account, filter by category/location/type, and submit applications with resume upload.
 
-Currently, two official plugins are available:
+## 🔗 Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **GitHub:** https://github.com/YOUR_USERNAME/job-platform
+- **Live Demo:** Coming soon (after backend deployment)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Entry screen with animated stats
+- User authentication (Signup/Login) - localStorage based
+- 16+ jobs across 15 industries (Healthcare, Education, Marketing, Construction, Hospitality, Finance, Tech, etc.)
+- Search by title, company, or keywords
+- Filter by location, job type, and category
+- Job application form with resume upload (PDF, DOC, DOCX, TXT, max 5MB)
+- Toast notifications for all actions
+- Fully responsive (mobile, tablet, desktop)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18 + Vite
+- CSS3 (custom, no frameworks)
+- localStorage (demo data persistence)
+
+## 📁 Project Structure
+src/
+├── components/
+│ ├── EntryScreen.jsx # Landing page
+│ ├── AuthModal.jsx # Signup/Login
+│ ├── Navbar.jsx # Navigation
+│ ├── JobCard.jsx # Job card
+│ ├── JobList.jsx # Jobs grid
+│ ├── FilterBar.jsx # Search & filters
+│ ├── ApplyModal.jsx # Application form
+│ ├── Toast.jsx # Notifications
+│ └── ToastContainer.jsx
+├── data/
+│ └── jobs.json # 16 mock jobs
+├── App.jsx
+└── App.css
+
+text
+
+## 🏃 Run Locally
+
+```bash
+git clone https://github.com/YOUR_USERNAME/job-platform.git
+cd job-platform
+npm install
+npm run dev
+Visit http://localhost:5173
+
+🧪 View Stored Data
+Chrome DevTools (F12) → Application → Local Storage → http://localhost:5173
+
+Keys: users, currentUser, applications, resumes
+
+📱 Responsive Breakpoints
+Device	Breakpoint
+Desktop	>1024px (2-3 columns)
+Tablet	768-1024px (1-2 columns)
+Mobile	<768px (1 column)
+🔜 Coming Soon (Phase 2)
+PostgreSQL/MongoDB database
+
+Real email notifications
+
+Employer dashboard
+
+Stripe payments
+
+Application tracking
+
+🙋‍♂️ Author
+Your Sumeghna Banerjee
+
+GitHub: @sumeghna
+
+Email: your.email@example.com
+
+📄 License
+MIT
+
+text
+
+---
+
